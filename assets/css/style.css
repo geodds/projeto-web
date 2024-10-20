@@ -1,7 +1,14 @@
-/*header{
+body {
+    font-family: 'Kollektif', sans-serif;
+}
+
+header{
     display: grid;
-    grid-template-columns: auto;
     align-items: center;
     padding: 10px;
     background-color: #b300fa;
-}*/
+    color: white;
+
+}
+
+                                                
