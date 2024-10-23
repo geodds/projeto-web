@@ -15,8 +15,11 @@
 
 <body>
     <!--Imagem responsiva-->
-    <img src="../assets/images/illustracao.png" alt="Foto dinamica" width="50%" height="auto"> <!--Largura da imagem vai ocupar 100% da tela e a altura vai ser automatica -->
-
+    <picture>
+        <source media="(max-width: 750px)" srcset="../assets/images/illustracao-p2.png"  type="image/png">
+        <source media="(max-width: 1050px)" srcset="../assets/images/illustracao-m2.png"  type="image/png">
+        <img src="../assets/images/illustracao-g2.png" alt="Foto dinamica">
+    </picture>
     <h2>Pontos de Onibus em Irece-ba</h2>
 
     <!--lista nao ordenada de ruas-->
