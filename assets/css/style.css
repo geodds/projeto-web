@@ -1,14 +1,31 @@
+
 body {
-    font-family: 'Kollektif', sans-serif;
+    font-family: 'Kollektif', sans-serif;/*Fonte que sera usada*/
+}
+
+.sandbox{
+    background-color: #fffae2; /*Cor de fundo da pagina "atividade-3"*/
+    background-image: url(../images/original.png); /*Imagem de fundo*/
+    background-size: 100%;/*A imagem vai coupar 100% da largura da pagina*/
+    background-repeat: no-repeat;/*Nao repete a imagem*/
+    background-position: center;/*Centraliza a imagem*/
+   
 }
 
 header{
     display: grid;
     align-items: center;
     padding: 10px;
-    background-color: #b300fa;
+    background-color: #9b4dee;
     color: white;
+}
 
+h1 {
+    color: #21215d; /*Cor da fonte do h1*/
+}
+
+a{
+    color: #f9a36c;/*Cor da fonte da tag a*/
 }
 
                                                 
