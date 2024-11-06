@@ -9,23 +9,58 @@ body {
     background-size: 100%;/*A imagem vai coupar 100% da largura da pagina*/
     background-repeat: no-repeat;/*Nao repete a imagem*/
     background-position: center;/*Centraliza a imagem*/
-   
 }
 
 header{
-    display: grid;
-    align-items: center;
+    display: flex;
     padding: 10px;
+    position: fixed;/*Fixa a header quando rola a pagina*/
+    top: 0;/*"Cola" a header no topo*/
+    width: 100%;
+    height: 60px;
+    left: 0;/*"Cola" a header do lado esquerdo*/
+    z-index: 99;/*A header vai se sobrepor a outros elementos da pagina*/
     background-color: #9b4dee;
     color: white;
 }
 
-h1 {
-    color: #21215d; /*Cor da fonte do h1*/
+.area-top{
+    padding-top: 100px;
 }
 
-a{
-    color: #f9a36c;/*Cor da fonte da tag a*/
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-home{
+    width: 100px; /* Defina uma largura fixa menor */
+    display: flex;
+    align-items: center; /* Alinha verticalmente o logo */
+}
+
+.nav-home img {
+    width: 80%; /* Ajuste para controlar o tamanho da logo */
+    height: auto;
+}
+
+.navbar ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar li{
+    margin-left: 15px;/*Espaco entre um link e outro*/
+}
+
+.nav-links a{
+    color: #f7ea48;/*Cor da fonte da tag a*/
+    text-decoration: none;/*Tira o sublinhado dos links*/
+}
+
+.nav-links a:hover{
+    color: #f9a36c;/*Muda de cor quando passa o cursor*/
 }
 
                                                 

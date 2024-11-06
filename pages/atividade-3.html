@@ -10,50 +10,71 @@
 </head>
 
 <header> <!--Cabecalho da pagina-->
-    <img src="../assets/images/logo-bus-ib.png" width="20%" height="auto">
+    <div class="navbar">
+        <div class="nav-home"><!--Icon e link para home-->
+            <a class="nav-home" href="../index.html">
+            <img src="../assets/images/logo-bus-ib.png" width="10%" height="auto">
+            </a>
+        </div>
+        <nav class="nav-links"><!--Barra de navegacao-->
+            <ul>
+            <li class="navbar-item"><a href="../index.html">Home</a></li>
+            <li class="navbar-item"><a href="../pages/atividade-3.html">Paradas</a></li>
+            <li class="navbar-item"><a href="">Sobre</a></li>
+            <li class="navbar-item"><a href="">Duvidas</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
 
 <body class="sandbox"> <!--Definindo uma classe pra pagina para usar estilo especifico de css-->
     <!--Imagem responsiva-->
-    <picture>
-        <source media="(max-width: 750px)" srcset="../assets/images/illustracao-p2.png"  type="image/png">
-        <source media="(max-width: 1050px)" srcset="../assets/images/illustracao-m2.png"  type="image/png">
-        <img src="../assets/images/illustracao-g2.png" alt="Foto dinamica">
-    </picture>
+    <section class="section-top">
+        <div class="area-top">
+            <picture>
+                <source media="(max-width: 750px)" srcset="../assets/images/illustracao-p2.png"  type="image/png">
+                <source media="(max-width: 1050px)" srcset="../assets/images/illustracao-m2.png"  type="image/png">
+                <img src="../assets/images/illustracao-g2.png" alt="Foto dinamica">
+            </picture>
 
-    <h2>Pontos de Onibus em Irece-ba</h2>
-    <!--lista nao ordenada de ruas-->
-    <ul> 
-        <li>Praca do Feijao (em frente ao Subway)</li>
-        <li>Rodoviaria</li>
-        <li>Farol da Heineken</li>
-    </ul>
-
-    <!--Link para a pagina index-->
-    <a href="../index.html">Home</a>
+            <div class="list-top">
+                <h2>Pontos de Onibus em Irece-ba</h2>
+                <!--lista nao ordenada de ruas-->
+                <ul> 
+                    <li>Praca do Feijao (em frente ao Subway)</li>
+                    <li>Rodoviaria</li>
+                    <li>Farol da Heineken</li>
+                </ul>
+            </div>
+        </div>
+    </section>
     <hr>
 
-    <!--Atividade 4-->
-    <h1>Video</h1>
-    <!--Video do youtube-->
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/a90jaPqU5rU?si=FI_0Xe8ozOYCgfBS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    
+    <section class="ainda-sem-nome">
+        <!--Atividade 4-->
+        <h1>Video</h1>
+        <!--Video do youtube-->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/a90jaPqU5rU?si=FI_0Xe8ozOYCgfBS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
 
-    <h1>Audio</h1>
-    <audio preload="auto" controls autoplay>
-        <source src="../assets/audio/you-spin-me-round.mp3" type="audio/mpeg">
-        <source src="../assets/audio/you-spin-me-round.mp3" type="audio/mpeg">
-        <source src="../assets/audio/you-spin-me-round.ogg" type="audio/ogg">
-        <p>Nao foi possivel carregar audio.</p>
-    </audio>
+        <h1>Audio</h1>
+        <audio preload="auto" controls autoplay>
+            <source src="../assets/audio/you-spin-me-round.mp3" type="audio/mpeg">
+            <source src="../assets/audio/you-spin-me-round.mp3" type="audio/mpeg">
+            <source src="../assets/audio/you-spin-me-round.ogg" type="audio/ogg">
+            <p>Nao foi possivel carregar audio.</p>
+        </audio>
+    </section>
     <hr>
 
-    <!--Atividade 5-->
-    <h1>Paleta de Cores</h1>
-    <picture>
-        <source media="(max-width: 750px)" srcset="../assets/images/paleta-p.png"  type="image/png">
-        <source media="(max-width: 1050px)" srcset="../assets/images/paleta-m.png"  type="image/png">
-        <img src="../assets/images/paleta-g.png" alt="Foto dinamica">
-    </picture>
+    <section class="ainda-sem-nome2">
+        <!--Atividade 5-->
+        <h1>Paleta de Cores</h1>
+        <picture>
+            <source media="(max-width: 750px)" srcset="../assets/images/paleta-p.png"  type="image/png">
+            <source media="(max-width: 1050px)" srcset="../assets/images/paleta-m.png"  type="image/png">
+            <img src="../assets/images/paleta-g.png" alt="Foto dinamica">
+        </picture>
+    </section>
 </body>
 </html>
