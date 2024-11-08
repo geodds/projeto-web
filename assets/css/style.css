@@ -1,19 +1,25 @@
+*{
+    
+}
+
 
 body {
     font-family: 'Kollektif', sans-serif;/*Fonte que sera usada*/
 }
 
 .sandbox{
+    margin: auto;
     background-color: #fffae2; /*Cor de fundo da pagina "atividade-3"*/
     background-image: url(../images/original.png); /*Imagem de fundo*/
-    background-size: 100%;/*A imagem vai coupar 100% da largura da pagina*/
+    background-size: 100%;/*A imagem de fundo vai coupar 100% da largura da pagina*/
     background-repeat: no-repeat;/*Nao repete a imagem*/
     background-position: center;/*Centraliza a imagem*/
 }
 
+/*Estilos do cabecalho*/
 header{
     display: flex;
-    padding: 10px;
+    padding: 10px 20px;
     position: fixed;/*Fixa a header quando rola a pagina*/
     top: 0;/*"Cola" a header no topo*/
     width: 100%;
@@ -24,24 +30,20 @@ header{
     color: white;
 }
 
-.area-top{
-    padding-top: 100px;
-}
-
 .navbar{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
 .nav-home{
-    width: 100px; /* Defina uma largura fixa menor */
+    width: 100px; 
     display: flex;
-    align-items: center; /* Alinha verticalmente o logo */
+    align-items: center; 
 }
 
 .nav-home img {
-    width: 80%; /* Ajuste para controlar o tamanho da logo */
+    width: 120px; /*Tamanho padrao para a logo*/
     height: auto;
 }
 
@@ -54,13 +56,33 @@ header{
     margin-left: 15px;/*Espaco entre um link e outro*/
 }
 
+.nav-links{
+    flex-wrap: wrap;
+    margin-left: auto;
+}
+
 .nav-links a{
     color: #f7ea48;/*Cor da fonte da tag a*/
     text-decoration: none;/*Tira o sublinhado dos links*/
+
 }
 
 .nav-links a:hover{
     color: #f9a36c;/*Muda de cor quando passa o cursor*/
 }
+
+/*Estilos da primeira secao*/
+.area-top{
+    padding-top: 100px;
+}
+
+/*Estilos dos containers
+.container{
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}*/
 
                                                 

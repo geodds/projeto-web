@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/icon/logo-ib.ico" type="image/x-icon"> <!--favicon-->
-    <link rel="stylesheet" href="../assets/css/style.css"> <!--Arquivo de css-->
+    <link rel="stylesheet" href="../assets/css/style.css"> 
+    <link rel="stylesheet" href="../assets/css/atividade3-style.css"> <!--Arquivo de css-->
     <link href="https://fonts.cdnfonts.com/css/kollektif" rel="stylesheet"> <!--Fonte usada no projeto-->
     <title>Pontos por ruas</title>
 </head>
@@ -16,65 +17,68 @@
             <img src="../assets/images/logo-bus-ib.png" width="10%" height="auto">
             </a>
         </div>
-        <nav class="nav-links"><!--Barra de navegacao-->
+        <nav class="nav-links" id="menu"><!--Barra de navegacao-->
             <ul>
             <li class="navbar-item"><a href="../index.html">Home</a></li>
             <li class="navbar-item"><a href="../pages/atividade-3.html">Paradas</a></li>
-            <li class="navbar-item"><a href="">Sobre</a></li>
-            <li class="navbar-item"><a href="">Duvidas</a></li>
+            <li class="navbar-item"><a href="#">Sobre</a></li>
+            <li class="navbar-item"><a href="#">Duvidas</a></li>
             </ul>
         </nav>
     </div>
 </header>
 
 <body class="sandbox"> <!--Definindo uma classe pra pagina para usar estilo especifico de css-->
-    <!--Imagem responsiva-->
-    <section class="section-top">
-        <div class="area-top">
-            <picture>
-                <source media="(max-width: 750px)" srcset="../assets/images/illustracao-p2.png"  type="image/png">
-                <source media="(max-width: 1050px)" srcset="../assets/images/illustracao-m2.png"  type="image/png">
-                <img src="../assets/images/illustracao-g2.png" alt="Foto dinamica">
-            </picture>
+    <main>
+        <!--Imagem responsiva-->
+        <section class="section-top">
+            <div class="container">
+                <picture class="">
+                    <img src="../assets/images/illustracao-g2.png" alt="Foto dinamica" class="imagem">
+                </picture>
 
-            <div class="list-top">
-                <h2>Pontos de Onibus em Irece-ba</h2>
-                <!--lista nao ordenada de ruas-->
-                <ul> 
-                    <li>Praca do Feijao (em frente ao Subway)</li>
-                    <li>Rodoviaria</li>
-                    <li>Farol da Heineken</li>
-                </ul>
+                <div class="list-top">
+                    <h2>Pontos de Onibus em Irece-ba</h2>
+                    <!--lista nao ordenada de ruas-->
+                    <ul> 
+                        <li>Praca do Feijao (em frente ao Subway)</li>
+                        <li>Rodoviaria</li>
+                        <li>Farol da Heineken</li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </section>
-    <hr>
+        </section>
+        <hr>
 
-    <section class="ainda-sem-nome">
-        <!--Atividade 4-->
-        <h1>Video</h1>
-        <!--Video do youtube-->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/a90jaPqU5rU?si=FI_0Xe8ozOYCgfBS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        
+        <section class="ainda-sem-nome">
+            <div class="container">
+                <!--Atividade 4-->
+                <div class="video"> <!--Div do video-->
+                    <h1>Video</h1>
+                    <!--Video do youtube-->
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/a90jaPqU5rU?si=FI_0Xe8ozOYCgfBS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
 
-        <h1>Audio</h1>
-        <audio preload="auto" controls autoplay>
-            <source src="../assets/audio/you-spin-me-round.mp3" type="audio/mpeg">
-            <source src="../assets/audio/you-spin-me-round.mp3" type="audio/mpeg">
-            <source src="../assets/audio/you-spin-me-round.ogg" type="audio/ogg">
-            <p>Nao foi possivel carregar audio.</p>
-        </audio>
-    </section>
-    <hr>
+                <h1>Audio</h1>
+                <audio preload="auto" controls autoplay>
+                    <source src="../assets/audio/you-spin-me-round.mp3" type="audio/mpeg">
+                    <source src="../assets/audio/you-spin-me-round.mp3" type="audio/mpeg">
+                    <source src="../assets/audio/you-spin-me-round.ogg" type="audio/ogg">
+                    <p>Nao foi possivel carregar audio.</p>
+                </audio>
+            </div>
+        </section>
+        <hr>
 
-    <section class="ainda-sem-nome2">
-        <!--Atividade 5-->
-        <h1>Paleta de Cores</h1>
-        <picture>
-            <source media="(max-width: 750px)" srcset="../assets/images/paleta-p.png"  type="image/png">
-            <source media="(max-width: 1050px)" srcset="../assets/images/paleta-m.png"  type="image/png">
-            <img src="../assets/images/paleta-g.png" alt="Foto dinamica">
-        </picture>
-    </section>
+        <section class="ainda-sem-nome2">
+            <div class="container">
+                <!--Atividade 5-->
+                <h1>Paleta de Cores</h1>
+                <picture>
+                    <img src="../assets/images/paleta-g.png" alt="Foto dinamica" class="paleta">
+                </picture>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
