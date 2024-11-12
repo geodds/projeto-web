@@ -1,0 +1,62 @@
+.icon-option{
+    width: 15px;
+}
+
+.link-option{
+    cursor: pointer;
+}
+
+/*CSS do Table Generator*/
+.tg  {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+.tg td{
+    border-color:black;
+    border-style:solid;
+    border-width:1px;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    overflow:hidden;
+    padding:12px 20px;
+    word-break:normal;
+}
+
+.tg th{
+    border-color:black;
+    border-style:solid;
+    border-width:1px;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    font-weight:normal;
+    overflow:hidden;
+    padding:12px 20px;
+    word-break:normal;
+}
+
+.tg .tg-blax{
+    background-color:#9b4dee;
+    border-color:inherit;
+    color:#ffffff;
+    font-size:10px;
+    font-weight:bold;
+    text-align:center;
+    vertical-align:middle
+}
+
+.tg .tg-omgf{
+    background-color:#9b4dee;
+    border-color:inherit;
+    color:#ffffff;
+    font-weight:bold;
+    text-align:center;
+    vertical-align:middle 
+}
+
+.tg .tg-u6hl{
+    background-color:#e4d0fa;
+    border-color:inherit;
+    text-align:center;
+    vertical-align:middle
+}

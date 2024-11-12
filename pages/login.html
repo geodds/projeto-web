@@ -17,9 +17,13 @@
                 <img src="../assets/images/login-girl.png"alt="Imagem Login">
             </div>
             <div class="login-area">
-                <!--Define o caminho que os dados do formulario serao enviados
-                <form action="/pages/administrator.html" method="POST" class="login-form">-->
+                <!--Define o caminho que os dados do formulario serao enviados-->
+                <form action="../pages/administrator.html" method="POST" class="login-form">
                     <h2>Login</h2>
+
+                    <!--Campo nome-->
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required><!--'required' = campo obrigatorio-->
 
                     <!--Campo email-->
                     <label for="email">Email:</label>
