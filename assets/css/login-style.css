@@ -1,5 +1,6 @@
 body {
     font-family: Arial, sans-serif;
+    font-size: 14px;
     background-color: #f4f4f4;
     display: flex;
     justify-content: center;
@@ -46,10 +47,10 @@ body {
 h2 {
     text-align: center;
     margin-bottom: 20px;
+
 }
 
 label {
-    font-size: 14px;
     margin-bottom: 8px;
     display: block;
 }
@@ -68,6 +69,7 @@ input {
     padding: 10px; 
     background-color: #e4d0fa;
     color: #9b4dee;
+    font-size: 14px;
 }
 
 .btn-login:hover{
@@ -102,9 +104,23 @@ a:hover {
     .login-image img {
         width: 100%; 
         max-width: 300px; 
+        
     }
     
     .login-form {
         width: 100%; 
     }
+
+    footer{
+      font-size: 16px;  
+    }
+}
+
+/*Ajusta o layout para telas maiores*/
+@media (min-width: 1024px) {
+    body{
+        font-size: 18px;
+        padding: 40px;
+    }
+    
 }

@@ -13,14 +13,20 @@
     <div class="navbar">
         <div class="nav-home">
             <a class="nav-home" href="index.html">
-            <img src="assets/images/logo-bus-ib.png" width="10%" height="auto">
+                <img src="assets/images/logo-bus-ib.png" class="logo" width="10%" height="auto" alt="Logo Irebus">
             </a>
-        </div> <nav class="nav-links" id="menu"><!--Barra de navegacao-->
+        </div> 
+       <!-- <button class="hamburger" id="hamburguer">
+            ☰
+        </button>-->
+        <nav class="nav-links" id="menu"><!--Barra de navegacao-->
             <ul>
                 <li class="navbar-item"><a href="../projeto-web/index.html">Home</a></li>
                 <li class="navbar-item"><a href="../projeto-web/pages/atividade-3.html">Paradas</a></li>
                 <li class="navbar-item"><a href="#">Sobre</a></li>
                 <li class="navbar-item"><a href="#">Duvidas</a></li>
+                </nav>
+                
                 <div class="btn-nav"><!--Botoes de login-->
                     <button class="btn-login">Cadastre-se</button>
                     <a href="pages/login.html">
@@ -28,7 +34,7 @@
                     </a>
                 </div>
             </ul>  
-        </nav>
+        
     </div>
 </header>
 
@@ -47,8 +53,23 @@
         <h2>Essa secao tera vantagens de usar a pagina</h2>
     </section>
 
+    <!--Rodape-->
     <footer class="footer">
-        <h2>Rodape da pagina</h2>
+        <!--&copy exibe o simbolo de copyright-->
+        <p>&copy; 2024 Irebus. Todos os direitos reservados.</p>
+
+        <p>
+            <a href="#">Política de Privacidade</a> | 
+            <a href="#">Termos de Uso</a> | 
+            <a href="#">Contato</a>
+        </p>
+
+        <div class="footer-social">
+            <a href="#" class="social-icon">Facebook</a>
+            <a href="#" class="social-icon">Twitter</a>
+            <a href="#" class="social-icon">Instagram</a>
+        </div>
     </footer>
+    <script src="./assets/javascript/header.js"></script>
 </body>
 </html>

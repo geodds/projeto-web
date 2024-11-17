@@ -1,9 +1,22 @@
-*{
-    
+html, body{
+    /*zerando as margens e padding da pagina*/
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
+
+/*.nav-links.show {
+    display: flex;  Mostra os links ao clicar no botão
+} */
 
 body, button {
     font-family: 'Kollektif', sans-serif;/*Fonte que sera usada*/
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /**/
 }
 
 .sandbox{
@@ -22,7 +35,7 @@ header{
     position: fixed;/*Fixa a header quando rola a pagina*/
     top: 0;/*"Cola" a header no topo*/
     width: 100%;
-    height: 60px;
+   /* height: 60px;*/
     left: 0;/*"Cola" a header do lado esquerdo*/
     z-index: 99;/*A header vai se sobrepor a outros elementos da pagina*/
     background-color: #9b4dee;
@@ -30,14 +43,22 @@ header{
 
 .navbar{
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     align-items: center;
+    gap: 15px;
+    width: 100%;
 }
 
 .nav-home{
+    flex-shrink: 0;
     width: 100px; 
     display: flex;
     align-items: center; 
+}
+
+.logo{
+    height: 50px;
+    object-fit: contain;
 }
 
 .nav-home img {
@@ -55,11 +76,15 @@ header{
 }
 
 .nav-links{
-    flex-wrap: wrap;
-    margin-left: auto;
+    display: none;/*Esconde os links*/
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
 }
 
-.nav-links a{
+.nav-links a, footer a{
+    padding: 10px;
     color: #f7ea48;/*Cor da fonte da tag a*/
     text-decoration: none;/*Tira o sublinhado dos links*/
     transition: 0.5s; /*Gera uma transicao suave ao passar o cursor*/
@@ -72,6 +97,8 @@ header{
 }
 
 .btn-login{
+    padding: 8px 16px;
+    margin-left: 15px;
     color: #9b4dee;
     font-size: 15px;
     background: #f7ea48;
@@ -93,15 +120,22 @@ header{
 
 .btn-nav{
     display: flex;
-    margin: 5px;
 }
 
-.nav-links a:hover{
+.nav-links a:hover, footer a:hover{
     color: #f9a36c;/*Muda de cor quando passa o cursor*/
     
 }
 
-
+/* Botão hamburguer */
+.hamburger {
+    color: #ffffff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+    z-index: 100;
+}
 
 /*Estilos da primeira secao*/
 .area-top{
@@ -117,4 +151,65 @@ header{
     margin-left: auto;
 }*/
 
-                                                
+/*Estilo rodape*/
+footer{
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 150px;
+    background-color: #9b4dee;
+    text-align: center;
+    margin-top: auto;
+}
+
+/*ajuste do cabecalho para telas maiores*/
+@media screen and (min-width: 768px) {
+    .hamburger{ /*Esconde o botao em telas maiores*/
+        display: none;
+    }
+    .navbar{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-links{
+        display: block;
+        position: row;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+
+    .btn-nav{
+        flex-direction: row;
+        gap: 15px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .navbar{
+        max-width: 1200px;
+        margin: 0;
+    }
+
+    .nav-links ul{
+        gap: 20px;
+    }
+
+    .btn-login{
+        
+
+    }
+}
+
+.nav-links.active {
+    display: block;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #9b4dee;
+    padding: 10px;
+    border-radius: 5px;
+}
