@@ -35,10 +35,9 @@ header{
     position: fixed;/*Fixa a header quando rola a pagina*/
     top: 0;/*"Cola" a header no topo*/
     width: 100%;
-   /* height: 60px;*/
     left: 0;/*"Cola" a header do lado esquerdo*/
     z-index: 99;/*A header vai se sobrepor a outros elementos da pagina*/
-    background-color: #9b4dee;
+    background-color: var(--purple);
 }
 
 .navbar{
@@ -47,13 +46,6 @@ header{
     align-items: center;
     gap: 15px;
     width: 100%;
-}
-
-.nav-home{
-    flex-shrink: 0;
-    width: 100px; 
-    display: flex;
-    align-items: center; 
 }
 
 .logo{
@@ -76,16 +68,15 @@ header{
 }
 
 .nav-links{
-    display: none;/*Esconde os links*/
     flex-direction: column;
     gap: 10px;
     margin: 0;
     padding: 0;
 }
 
-.nav-links a, footer a{
+.navbar .nav-link, footer a{
     padding: 10px;
-    color: #f7ea48;/*Cor da fonte da tag a*/
+    color: var(--yellow);/*Cor da fonte da tag a*/
     text-decoration: none;/*Tira o sublinhado dos links*/
     transition: 0.5s; /*Gera uma transicao suave ao passar o cursor*/
     text-shadow: 0px 10px 35px rgba(0, 0, 0, 0.1);/*Sombra bem suave no texto*/
@@ -96,14 +87,12 @@ header{
     align-items: center;
 }
 
-.btn-login{
-    padding: 8px 16px;
-    margin-left: 15px;
+/*Estilo do botoes do index*/
+.gap-2 .btn{
     color: #9b4dee;
-    font-size: 15px;
     background: #f7ea48;
-    min-width: 100px;
-    line-height: 46px;
+    min-width: 120px;
+    line-height: 45px;
     border-radius: 30px;
     border: none;
     box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);/*Sombra do botao*/
@@ -111,45 +100,37 @@ header{
     text-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-.btn-login:hover{
-    cursor: pointer;
+.gap-2 .btn:active {
+    transform: none; /* Remove o efeito de "pressionado" */
+    background-color: inherit; /* Mantém a cor do botão */
+}
+
+.gap-2 .btn:hover{
     transition: 0.5s;
-    background-color: #e4d0fa;
-    color: #9b4dee;
+    background-color: var(--light-purple);
+    color: var(--purple);
 }
 
-.btn-nav{
-    display: flex;
+/*Estilos do botao hambuguer*/
+.navbar-toggler {
+    border-color: #ffffff; /*Borda*/
+    color: #ffffff;
 }
 
-.nav-links a:hover, footer a:hover{
+.navbar-toggler-icon {
+    background-image: url('../icon/menu.ico');/*imagem de fundo (tres tracinhos)*/
+}
+
+
+.navbar .nav-link:hover, footer a:hover{
     color: #f9a36c;/*Muda de cor quando passa o cursor*/
     
 }
 
-/* Botão hamburguer */
-.hamburger {
-    color: #ffffff;
-    background: none;
-    border: none;
-    cursor: pointer;
-    display: block;
-    z-index: 100;
-}
-
-/*Estilos da primeira secao*/
-.area-top{
-    padding-top: 100px;
-}
-
-/*Estilos dos containers
+/*Estilos dos containers*/
 .container{
-    width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}*/
+    
+}
 
 /*Estilo rodape*/
 footer{
@@ -165,9 +146,9 @@ footer{
 
 /*ajuste do cabecalho para telas maiores*/
 @media screen and (min-width: 768px) {
-    .hamburger{ /*Esconde o botao em telas maiores*/
-        display: none;
-    }
+
+   
+
     .navbar{
         flex-direction: row;
         justify-content: space-between;
@@ -212,4 +193,12 @@ footer{
     background-color: #9b4dee;
     padding: 10px;
     border-radius: 5px;
+}
+
+:root{
+    --purple: #9b4dee;
+    --yellow: #f7ea48;
+    --orange: #f9a36c;
+    --light-purple: #e4d0fa;
+    --dark-blue: #21215d;
 }
