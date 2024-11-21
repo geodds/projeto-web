@@ -14,6 +14,7 @@ body, button {
 }
 
 body{
+    padding-top: 160px;
     display: flex;
     flex-direction: column;
     min-height: 100vh; /**/
@@ -146,9 +147,6 @@ footer{
 
 /*ajuste do cabecalho para telas maiores*/
 @media screen and (min-width: 768px) {
-
-   
-
     .navbar{
         flex-direction: row;
         justify-content: space-between;
