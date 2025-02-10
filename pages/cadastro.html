@@ -7,7 +7,8 @@
         <link rel="stylesheet" href="../assets/css/style.css"> 
         <link rel="stylesheet" href="../assets/css/login-style.css"> <!--Arquivo de css-->
         <link href="https://fonts.cdnfonts.com/css/kollektif" rel="stylesheet"> <!--Fonte usada no projeto-->
-        <title>Login</title>
+        <script src="../assets/javascript/script.js" defer></script>
+        <title>Cadastro</title>
     </head>
     
 <body>
@@ -19,20 +20,28 @@
             <div class="login-area">
                 <!--Define o caminho que os dados do formulario serao enviados-->
                 <form action="../pages/administrator.html" method="POST" class="login-form">
-                    <h2>Login</h2>
+                    <h2>Novo Cadastro</h2>
+
+                    <!--Campo nome-->
+                    <label for="name">Nome:</label>
+                    <input type="name" class="name" name="name" required>
+
+                    <!--Campo login-->
+                    <label for="login">Login:</label>
+                    <input type="login" class="login" name="login" required>
 
                     <!--Campo email-->
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" class="email" name="email" required>
                     
                     <!--Campo senha-->
                     <label for="password">Senha:</label>
-                    <input type="password" id="password" name="password" required>
+                    <input type="password" class="password" name="password" required>
                     
                     <!--Botao pra pagina do adm-->
                     <div class="gap-2">
                         <a href="administrator.html">
-                        <button type="submit" class="btn btn-primary" >Entrar</button>
+                        <button type="submit" class="btn btn-primary" >Cadastrar</button>
                         </a>
                     </div>
                     <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>

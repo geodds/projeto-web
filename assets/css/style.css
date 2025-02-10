@@ -5,19 +5,15 @@ html, body{
     height: 100%;
 }
 
-/*.nav-links.show {
-    display: flex;  Mostra os links ao clicar no botão
-} */
-
 body, button {
-    font-family: 'Kollektif', sans-serif;/*Fonte que sera usada*/
+    font-family: 'Poppins', sans-serif;/*Fonte que sera usada*/
 }
 
 body{
-    padding-top: 160px;
+    padding-top: 98px;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /**/
+    min-height: 100vh; 
 }
 
 .sandbox{
@@ -31,16 +27,14 @@ body{
 
 /*Estilos do cabecalho*/
 header{
-    display: flex;
-    padding: 10px 20px;
     position: fixed;/*Fixa a header quando rola a pagina*/
     top: 0;/*"Cola" a header no topo*/
     width: 100%;
-    left: 0;/*"Cola" a header do lado esquerdo*/
     z-index: 99;/*A header vai se sobrepor a outros elementos da pagina*/
     background-color: var(--purple);
 }
 
+/******** Revisar se esse css eh necessario ********/
 .navbar{
     display: flex;
     flex-direction: row;
@@ -49,30 +43,9 @@ header{
     width: 100%;
 }
 
-.logo{
-    height: 50px;
-    object-fit: contain;
-}
-
 .nav-home img {
     width: 120px; /*Tamanho padrao para a logo*/
     height: auto;
-}
-
-.navbar ul{
-    list-style-type: none;
-    display: flex;
-}
-
-.navbar li, .btn-login{
-    margin-left: 15px;/*Espaco entre um link e outro*/
-}
-
-.nav-links{
-    flex-direction: column;
-    gap: 10px;
-    margin: 0;
-    padding: 0;
 }
 
 .navbar .nav-link, footer a{
@@ -83,15 +56,14 @@ header{
     text-shadow: 0px 10px 35px rgba(0, 0, 0, 0.1);/*Sombra bem suave no texto*/
 }
 
-.navbar-item{
-    display: flex;
-    align-items: center;
+.area-top{
+    background-color: var(--light-purple);
 }
 
 /*Estilo do botoes do index*/
 .gap-2 .btn{
-    color: #9b4dee;
-    background: #f7ea48;
+    color: var(--purple);
+    background: var(--yellow);
     min-width: 120px;
     line-height: 45px;
     border-radius: 30px;
@@ -122,16 +94,41 @@ header{
     background-image: url('../icon/menu.ico');/*imagem de fundo (tres tracinhos)*/
 }
 
-
 .navbar .nav-link:hover, footer a:hover{
-    color: #f9a36c;/*Muda de cor quando passa o cursor*/
-    
+    color: var(--orange);/*Muda de cor quando passa o cursor*/
+}
+
+/*Estilo do input radio*/
+.form-check .form-check-input {
+    appearance: none; /*Remove o estilo padrão*/
+    width: 20px;
+    height: 20px;
+    border: 1px solid #6c757d; 
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.form-check .form-check-input:checked {
+    background-color: var(--purple);
+}
+
+.form-check .form-check-input:checked::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.form-check .form-check-input:focus { /*Remove o contorno azul padrao e adiciona um roxinho*/
+    outline: none; 
+    box-shadow: 0 0 0 3px var(--light-purple)
 }
 
 /*Estilos dos containers*/
-.container{
-    
-}
 
 /*Estilo rodape*/
 footer{
@@ -140,12 +137,14 @@ footer{
     flex-direction: column;
     width: 100%;
     height: 150px;
-    background-color: #9b4dee;
+    background-color: var(--purple);
     text-align: center;
     margin-top: auto;
 }
 
-/*ajuste do cabecalho para telas maiores*/
+
+/*
+/*ajuste do cabecalho para telas maiores
 @media screen and (min-width: 768px) {
     .navbar{
         flex-direction: row;
@@ -181,17 +180,7 @@ footer{
         
 
     }
-}
-
-.nav-links.active {
-    display: block;
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    background-color: #9b4dee;
-    padding: 10px;
-    border-radius: 5px;
-}
+}*/
 
 :root{
     --purple: #9b4dee;
